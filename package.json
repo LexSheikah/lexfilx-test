@@ -1,0 +1,21 @@
+{
+  "name": "lexflix",
+  "version": "1.0.0",
+  "description": "LexFlix es un catalogo de películas y series",
+  "main": "index.js",
+  "scripts": {
+    "build": "postcss css/tailwind.css -o public/css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "tailwind"
+  ],
+  "author": "Lex Ortiz <lex.ortizc@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "autoprefixer": "^9.7.5",
+    "postcss-cli": "^7.1.0",
+    "tailwindcss": "^1.2.0"
+  }
+}
