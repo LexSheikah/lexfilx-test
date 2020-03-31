@@ -2,6 +2,120 @@
 
 @tailwind components;
 
+/* Navbar */
+  .navbar {
+    @apply w-full flex flex-row bg-gray-900 justify-between items-baseline;
+  }
+
+  .branding {
+    @apply py-2 px-5 text-2xl font-bold text-purple-500;
+  }
+
+  .btn-menu {
+    @apply px-5 text-white text-3xl;
+  }
+
+  .menu-list {
+    @apply px-5 hidden text-white text-xl;
+  }
+
+  .menu-item {
+    @apply inline px-2;
+  }
+
+  .menu-item:hover {
+    @apply text-purple-600;
+  }
+
+/* Buscador */
+  .searcher {
+    @apply w-full mt-5 rounded-lg p-3 bg-gray-900;
+  }
+
+  .input-search {
+    @apply w-2/3 rounded-l-md p-3 text-white font-light bg-gray-700;
+  }
+  .input-search:hover{
+    @apply font-bold;
+  }
+
+  .input-search:focus{
+    @apply outline-none;
+  }
+
+  .btn-search {
+    @apply w-1/3 bg-purple-600 text-white text-xl font-bold rounded-r-md;
+  }
+
+  /* titulos */
+  .title-cat {
+    @apply mt-5 text-purple-500 text-2xl font-bold;
+  }
+
+  .title-line {
+    @apply w-full h-1 bg-purple-600;
+  }
+
+  /* cards */
+  .card {
+    @apply w-1/3 inline mt-5 px-2;
+  }
+
+  .card:hover {
+    @apply zoom;
+  }
+  .card-img {
+    @apply rounded-t-md;
+  }
+
+  .card-text {
+    @apply pb-2 bg-black rounded-b-md;
+  }
+
+  .card-title {
+    @apply text-white text-xl tracking-tight font-semibold uppercase;
+  }
+
+  .card-ranking {
+    @apply text-yellow-500;
+  }
+
+  /* footer */
+  .footer {
+    @apply mt-5 w-full flex flex-row bg-gray-900 justify-between items-baseline;
+  }
+
+  .footer-text{
+    @apply py-2 px-5 text-xl font-bold text-white;
+  }
+
+  .footer-name{
+    @apply text-purple-500;
+  }
+
+  /* screen */
+@screen sm {
+  .btn-menu {
+    @apply hidden;
+  }
+
+  .menu-list {
+    @apply flex;
+  }
+}
+
+  @screen md {
+    .card {
+      @apply w-1/4;
+    }
+  }
+
+  @screen lg {
+    .card {
+      @apply w-1/6;
+    }
+  }
+
 @tailwind utilities;
 
   @responsive{

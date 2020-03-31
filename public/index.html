@@ -8,96 +8,97 @@
 </head>
 <body class="min-h-screen bg-gray-800">
 
-  <header class="w-full flex flex-row bg-gray-900 justify-between items-baseline">
-    <div class="py-2 px-5 text-2xl font-bold text-purple-500">Lexflix</div>
-    <div class="px-5 hidden sm:flex ">
-      <ul class="text-white text-xl flex flex-row">
-        <li class="inline px-2 hover:text-purple-600">Anime</li>
-        <li class="inline px-2 hover:text-purple-600">Movies</li>
-        <li class="inline px-2 hover:text-purple-600">TV Shows</li>
-        <li class="inline hover:text-purple-600">About</li>
+  <navbar class="navbar">
+    <div class="branding">Lexflix</div>
+    <div class="btn-menu">&equiv;</div>
+    <div class="menu-list">
+      <ul class="flex flex-row">
+        <li class="menu-item">Anime</li>
+        <li class="menu-item">Movies</li>
+        <li class="menu-item">TV Shows</li>
+        <li class="menu-item">About</li>
       </ul>
     </div>
-  </header>
+  </navbar>
 
-  <div class="container m-auto">
-    <div class="w-full mt-5 rounded-lg p-3 bg-gray-900">
+  <div class="container m-auto px-5">
+    <div class="searcher">
       <form action="" class="flex flex-row">
-        <input type="text" placeholder="¿Qué quieres ver hoy?" class="w-2/3 rounded-l-md p-3 placeholder-gray-400 text-white bg-gray-700 focus:border-gray-500">
-        <input type="submit" class="w-1/3 bg-purple-600 text-white text-xl font-bold rounded-r-md" value="Buscar">
+        <input type="text" placeholder="¿Qué quieres ver hoy?" class="input-search placeholder-gray-400">
+        <input type="submit" class="btn-search" value="Buscar">
       </form>
     </div>
 
     <!-- Sección de anime -->
     <div>
-      <h2 class="mt-5 text-purple-500 text-2xl font-bold">Anime</h1>
-      <div class="w-full h-1 bg-purple-600"></div>
+      <div class="title-cat">Anime</div>
+      <div class="title-line"></div>
     </div>
 
     <div class="flex flex-wrap">
       <!-- Card 1 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 5 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 6 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
@@ -105,74 +106,74 @@
 
     <!-- Sección de movies -->
     <div>
-      <h2 class="mt-5 text-purple-500 text-2xl font-bold">Movies</h1>
-      <div class="w-full h-1 bg-purple-600"></div>
+      <div class="title-cat">Movies</div>
+      <div class="title-line"></div>
     </div>
 
     <div class="flex flex-wrap">
       <!-- Card 1 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 5 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 6 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
@@ -180,82 +181,84 @@
 
     <!-- Sección de tv shows -->
     <div>
-      <h2 class="mt-5 text-purple-500 text-2xl font-bold">Tv Shows</h1>
-      <div class="w-full h-1 bg-purple-600"></div>
+      <div class="title-cat">TV Shows</div>
+      <div class="title-line"></div>
     </div>
 
     <div class="flex flex-wrap">
       <!-- Card 1 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 2 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 3 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 4 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 5 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
       <!-- Card 6 -->
-      <div class="w-1/2 sm:w-1/3 md:w-1/4 lg:w-1/6 inline mt-5 px-2 hover:zoom">
+      <div class="card">
         <div >
-          <img class="rounded-t-md" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
+          <img class="card-img" src="https://images-na.ssl-images-amazon.com/images/I/61qghiSZAIL._AC_SL1050_.jpg" alt="Poster">
         </div>
-        <div class="pb-2 bg-black rounded-b-md">
-          <h2 class="text-white text-xl tracking-tight font-semibold uppercase">Batman</h2>
-          <div class="text-yellow-500">&starf;&starf;&starf;&starf;&star;</div>
+        <div class="card-text">
+          <h2 class="card-title">Batman</h2>
+          <div class="card-ranking">&starf;&starf;&starf;&starf;&star;</div>
         </div>
       </div>
 
     </div>
+
   </div>
-  <footer class="mt-5 w-full flex flex-row bg-gray-900 justify-between items-baseline">
-    <div class="py-2 px-5 text-xl font-bold text-white">
-      Desarrollado por <span class="text-purple-500">Lex Sheikah</span>
+
+  <footer class="footer">
+    <div class="footer-text">
+      Desarrollado por <span class="footer-name">Lex Sheikah</span>
     </div>
   </footer>
 </body>
